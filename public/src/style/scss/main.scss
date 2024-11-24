@@ -1,0 +1,100 @@
+@use "./global/vars" as *;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+}
+
+body {
+  background: #e6e6e6;
+  scrollbar-width: 6px;
+  scrollbar-color: $primery #f1f1f1;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $primery;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: $primery;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0.5rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+  max-width: unset !important;
+  @media (min-width: $md) {
+    padding: 0rem 5.5rem !important;
+  }
+}
+
+main {
+  padding-bottom: 30px;
+  min-height: calc(100vh - 60px);
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.filters-holder {
+  row-gap: 20px;
+  margin-top: 20px;
+  .search-container {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+// global
+@import "./global/global";
+@import "./global/backview";
+@import "./global/footer";
+@import "./global/header";
+@import "./global/vars";
+@import "./global/article-title";
+@import "./global/layout";
+@import "./global/drop-pages";
+@import "./global/cards-holder";
+@import "./global/profile";
+@import "./global/table";
+
+// register
+@import "./register/register";
+
+// index
+@import "./index/about-us";
+@import "./index/vision";
+@import "./index/our-approach";
+@import "./index/static";
+@import "./index/join-us";
+
+// admin
+@import "./admin/users";
+@import "./admin/classes";
+@import "./admin/grades";
+
+// teacher
+@import "./teacher/students";
+@import "./teacher/quizes";

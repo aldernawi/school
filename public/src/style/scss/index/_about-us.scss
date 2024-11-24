@@ -1,0 +1,36 @@
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 50px;
+  .img {
+    display: none;
+    height: 12rem;
+    width: 12rem;
+    border-radius: $altRadius;
+    box-shadow: $mainShadow;
+  }
+  .content {
+    .title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: $primery;
+      width: fit-content;
+      margin: 0;
+    }
+    .text {
+      margin-top: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      max-width: 300px;
+      display: block;
+      color: $text;
+    }
+  }
+  @media (min-width: $sm) {
+    .img {
+      display: block;
+    }
+  }
+}

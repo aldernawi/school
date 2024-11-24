@@ -1,0 +1,38 @@
+.cards-holder {
+  background-color: transparent;
+  padding: 0;
+  border-radius: $mainRadius;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 20px;
+}
+.work-section {
+  .card {
+    position: relative;
+  }
+}
+.dots {
+  position: relative;
+  .dots-btn {
+    width: 20px;
+    cursor: pointer;
+  }
+  .dots-holder {
+    display: none;
+    &.active {
+      min-width: 200px;
+      z-index: 999;
+      display: block;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 6px;
+    }
+  }
+}
+.services-section {
+  .card {
+    position: relative;
+  }
+}

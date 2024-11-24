@@ -1,0 +1,35 @@
+.footer {
+  height: 60px;
+  background-color: $light;
+  display: flex;
+  align-items: center;
+  row-gap: 40px;
+  color: $light;
+  font-size: 0.9rem;
+  justify-content: space-between;
+  .copy-rights {
+    color: $primery;
+    font-size: 0.7rem;
+  }
+  .social-meida {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    a {
+      color: $primery;
+      i {
+        font-size: 1rem;
+      }
+    }
+  }
+  @media (min-width: $lg) {
+    .copy-rights {
+      font-size: 1.25rem;
+    }
+    .social-meida {
+      a {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

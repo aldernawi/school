@@ -1,0 +1,24 @@
+.our-approach {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  gap: 1rem;
+  margin-top: 50px;
+  .content {
+    text-align: center;
+    .title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: $primery;
+      margin: 0;
+    }
+    .text {
+      margin-top: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      display: block;
+      color: $text;
+    }
+  }
+}

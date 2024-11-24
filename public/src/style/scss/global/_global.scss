@@ -1,0 +1,26 @@
+.article-title {
+  width: 100%;
+  padding: 20px;
+  background-color: $light;
+  margin: 20px 0 10px;
+  .title {
+    font-weight: 800;
+    font-size: 1rem;
+    margin: 0;
+    border-radius: 10px;
+    color: $primery;
+    width: fit-content;
+  }
+}
+
+.red {
+  background-color: #ed2939 !important;
+}
+.green {
+  background-color: #3ed715 !important;
+}
+
+.pointer {
+  cursor: pointer;
+  min-width: 20px;
+}

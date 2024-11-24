@@ -1,0 +1,109 @@
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background;
+  height: 60px;
+  padding: 0 1.5rem;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  .header--content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .user {
+      display: flex;
+      align-items: center;
+      img {
+        height: 2.5rem;
+        border-radius: 50%;
+      }
+    }
+    .sign-out {
+      border-radius: $mainRadius;
+      padding: 5px 10px;
+      background-color: $primery;
+      color: $light;
+    }
+  }
+  .header--links {
+    display: flex;
+    align-items: center;
+    .links-shower {
+      width: fit-content;
+      cursor: pointer;
+      i {
+        color: $dark;
+        font-size: 2.25rem;
+      }
+    }
+    .links-holder {
+      transition: 0.75s;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color: $dark;
+      z-index: 9999;
+      right: -110%;
+      top: 0;
+      span i {
+        color: $primery;
+        font-size: 2rem;
+        position: absolute;
+        cursor: pointer;
+        left: 20px;
+        top: 20px;
+      }
+      a {
+        font-size: 1rem;
+        color: $primery;
+        margin-top: 25px;
+        padding: 5px 10px;
+        &.active {
+          background-color: $primery;
+          color: $light;
+          border-radius: $mainRadius;
+        }
+      }
+    }
+  }
+  @media (min-width: $xlg) {
+    .links-shower {
+      i {
+        display: none;
+      }
+    }
+    .links-holder {
+      position: unset !important;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: unset !important;
+      flex-direction: row !important;
+      padding: 0 !important;
+      background-color: $background !important;
+      span {
+        display: none;
+      }
+      a {
+        color: $light;
+        font-size: 16px;
+        margin: 0 !important;
+        padding: 10px;
+      }
+    }
+  }
+  @media (min-width: $lg) {
+    .links-holder {
+      a {
+        padding: 20px;
+      }
+    }
+  }
+}

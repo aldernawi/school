@@ -1,0 +1,35 @@
+.classes {
+  .classes-btns {
+    margin: 30px 0 20px;
+    color: $primery;
+    font-size: 0.65rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    .btn {
+      color: $primery;
+      background-color: transparent;
+      padding: 5px 10px;
+      font-weight: bold;
+      border: none;
+      border-radius: $altRadius;
+      margin: 0 !important;
+      &.active {
+        color: $light;
+        background-color: $primery;
+      }
+    }
+  }
+  @media (min-width: $sm) {
+    .classes-btns {
+      font-size: 0.95rem;
+    }
+  }
+}

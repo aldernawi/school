@@ -1,0 +1,52 @@
+.filter-section {
+  .search-container {
+    width: fit-content;
+    .search-box {
+      transition: width $tl, border-radius $tl, background $tl, box-shadow $tl;
+      width: 35px;
+      height: 35px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      background: $light;
+      & + label .search-icon {
+        color: $primery;
+      }
+      &:hover {
+        color: white;
+        background: rgb(200, 200, 200);
+        box-shadow: 0 0 0 5px rgb(61, 71, 82);
+        & + label .search-icon {
+          color: white;
+        }
+      }
+      &:focus {
+        transition: width $tl cubic-bezier(0, 1.22, 0.66, 1.39),
+          border-radius $tl, background $tl;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        cursor: text;
+        width: 300px;
+        border-radius: $mainRadius;
+        padding: 2px 5px;
+        padding-left: 30px;
+        background-color: $light;
+        color: black;
+        & + label .search-icon {
+          color: black;
+        }
+      }
+      &:not(:focus) {
+        text-indent: -5000px;
+        box-shadow: $mainShadow;
+      } // for more-graceful falling back (:not browsers likely support indent)
+    }
+    .search-icon {
+      position: relative;
+      left: 30px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}

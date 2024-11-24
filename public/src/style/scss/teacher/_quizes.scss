@@ -1,0 +1,122 @@
+.quizes {
+  .quizes--links {
+    margin: 30px 0 20px;
+    color: $primery;
+    font-size: 0.65rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .link {
+      color: $primery;
+      background-color: transparent;
+      padding: 5px 10px;
+      font-weight: bold;
+      border: none;
+      border-radius: $altRadius;
+      margin: 0 !important;
+      &.active {
+        color: $light;
+        background-color: $primery;
+      }
+    }
+  }
+  @media (min-width: $sm) {
+    .quizes--links {
+      font-size: 0.95rem;
+    }
+  }
+}
+.create-quiz {
+  .quiz-name,
+  .quiz-time {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    .input-quiz {
+      width: 80%;
+      max-width: 500px;
+      padding: 5px 10px;
+      border-radius: $altRadius;
+      outline: none;
+      border: none;
+    }
+  }
+  .questions-holder {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .create-new-quesion {
+      padding: 6px;
+      background-color: $primery;
+      font-weight: bold;
+      color: $light;
+      text-align: center;
+      border: none;
+      border-radius: $altRadius;
+    }
+    .title {
+      margin: 50px 0 20px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .question {
+      background-color: $light;
+      border-radius: $altRadius;
+      width: 80%;
+      max-width: 500px;
+      padding: 10px;
+      text-align: left;
+      position: relative;
+      margin-top: 20px;
+      .question-title {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .grade {
+          font-size: 12px;
+          font-weight: 600;
+          color: $primery;
+        }
+      }
+      .question-number {
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: $primery;
+        color: $light;
+        border-radius: 50%;
+        left: -13px;
+        top: -13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .answers {
+        display: flex;
+        flex-direction: column;
+        margin-left: 35px;
+        align-items: flex-end;
+        gap: 10px;
+        margin-top: 20px;
+        .answer {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.create-new-answer {
+  padding: 4px 6px;
+  background-color: $primery;
+  color: $light;
+  border: none;
+  border-radius: $altRadius;
+}
+.footer {
+  color: $primery;
+}
